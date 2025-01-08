@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Шепетівка </title>
+        <link rel="icon" type="image/x-icon" href="img/index/y.jpg">
+        <link rel="stylesheet" href="fonts/line-awesome/css/line-awesome-font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+        <link href="style.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap.css.map" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>    
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+    
+            .horizontal-menu {
+                margin: 4% 0;
+            }
+    
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 16px;
+                justify-content: center;
+                padding: 16px;
+            }
+    
+            .grid-item {
+                overflow: hidden;
+            }
+    
+            .grid-item img {
+                width: 100%;
+                height: auto;
+                cursor: pointer;
+                transition: transform 0.2s;
+            }
+    
+            .grid-item img:hover {
+                transform: scale(1.1);
+            }
+    
+            .container {
+                position: fixed;
+                display: none;
+                z-index: 1;
+                padding-top: 60px;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgb(0, 0, 0);
+            }
+    
+            .container img {
+                width: 100%;
+                height: auto;
+            }
+    
+            .container span {
+                position: absolute;
+                top: 20px;
+                right: 45px;
+                font-size: 40px;
+                font-weight: bold;
+                color: white;
+                cursor: pointer;
+            }
+    
+            .container div {
+                text-align: center;
+                margin: 24px 0 12px 0;
+                position: relative;
+                color: white;
+            }
+        </style>
+    </head>
+    
+    <body>
+        
+      <!--Навігаційна панель-->
+      <nav style="margin: 0 0 4% 0;" class="horizontal-menu white-text"> 
+        <ul>
+          <li><a href="index.html" target="">Шепетівка</a></li>
+          <div class="topnav-right">
+          <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Дізнавайся</a>
+              <div class="dropdown-content">
+                <a href="museum.html">Музей</a>
+                <a href="park.html">Парк</a>
+              </div>
+            </li>
+            <li><a href="public_places.html" target=""> Заклади </a></li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Про Шепетівку</a>
+              <div class="dropdown-content">
+                <a href="about.html">Як дістатися</a>
+                <a href="history.html">І100рія Шепетівки</a>
+              </div>
+          </ul> 
+      </nav>
+      <br>
+    
+        <h2 class="text2">Оздоровчі частини міста</h2>
+    
+        <!-- Галерея вкладок -->
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="img/park/1.jpg" alt="..." onclick="myFunction(this);">
+            </div>
+            <div class="grid-item">
+                <img src="img/park/6.jpg" alt="..." onclick="myFunction(this);">
+            </div>
+            <div class="grid-item">
+                <img src="img/park/3.jpg" alt="..." onclick="myFunction(this);">
+            </div>
+            <div class="grid-item">
+                <img src="img/park/4.jpg" alt="..." onclick="myFunction(this);">
+            </div>
+            <div class="grid-item">
+                <img src="img/park/5.jpg" alt="..." onclick="myFunction(this);">
+            </div>
+            <div class="grid-item">
+                <img src="img/park/2.jpg" alt="..." onclick="myFunction(this);">
+            </div>
+            <div class="grid-item">
+                <img src="img/park/7.jpg" alt="..." onclick="myFunction(this);">
+            </div>
+            <div class="grid-item">
+                <img src="img/park/8.jpg" alt="..." onclick="myFunction(this);">
+            </div>
+        </div>
+    
+        <div class="container">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">×</span>
+            <img id="expandedImg">
+            <div id="imgtext"></div>
+        </div>
+    
+        <script>
+            function myFunction(imgs) {
+                var expandImg = document.getElementById("expandedImg");
+                var imgText = document.getElementById("imgtext");
+                expandImg.src = imgs.src;
+                imgText.innerHTML = imgs.alt;
+                expandImg.parentElement.style.display = "block";
+            }
+        </script>
+
+      <!--Звязок-->
+      <br>
+      <h1 class="text1">Зв'язок з нами</h1>
+        <ul class="c-list c-list__w100">
+            <li class="c-list__item">
+                <a href="https://travels.in.ua/uk-UA/locality/9137/shepetivka-city" target="_blank" class="c-list__link c-list__link--special c-text c-text--h5-regular a-color-light">Співпраця </a>
+            </li>
+          <li class="c-list__item">
+              <a href="https://maps.app.goo.gl/bbRcCC9vEX6xMt6C6" target="_blank" rel="nofollow" class="c-list__link c-list__link--special c-text c-text--h5-regular a-color-light">вул. Леонова, 2 </a>
+          </li>
+          <li class="c-list__item">
+              <a href="tel:+38 (097) 62 17 895" class="c-list__link c-list__link--special c-text c-text--h5-regular a-color-light">+38(097) 62 17 895</a>
+          </li>
+          <li class="c-list__item">
+              <a href="about_me.html" target="_blank" class="c-list__link c-list__link--special c-text c-text--h5-regular a-color-light"> Про мене </a>
+          </li>
+      </ul>
+    </body>
+</html>
+
+     <!--Звязок-->
+      
+    </body>
+</html>

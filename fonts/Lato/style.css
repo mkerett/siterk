@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "baronneue";
+  src: url(fonts/baronneue\ One.ttf);
+}
+
+
+html,body {
+    height: 100%;
+    background-color: rgba(0, 0, 255, 0.568);
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .logo{
+    height: 40px;
+    width: 30px;
+  }
+  .top-bar {
+    background-color: blue; 
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content:space-between; 
+    align-items: center;
+    padding: 16px;
+  }
+  
+  .top-bar a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+  }
+  
+  .nav-bar {
+    background-color: rgb(45, 45, 254); 
+    color: white;
+  }
+  
+  .nav-bar ul {
+    list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-bar li {
+    float: left;
+      display: inline;
+  }
+  
+  .nav-bar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  .nav-bar a:hover {
+    background-color: rgb(86, 86, 225);
+  }
+  
+  .content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+  }
+  
+  .rounded-button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      background-color:rgb(9, 9, 114);
+      color: white;
+      border-radius: 16px;
+      text-decoration: none;
+  }
+  
